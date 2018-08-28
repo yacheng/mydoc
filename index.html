@@ -3,14 +3,48 @@
 <head>
   <title>doc</title>
   <script src="https://cdn.bootcss.com/pagedown/1.0/Markdown.Converter.js"></script>
-  <script src="https://yacheng.github.io/mydoc/rax.js"></script>
+  <script src="http://30.8.76.45:8001/rax.js"></script>
+  <!-- <script src="https://yacheng.github.io/mydoc/rax.js"></script> -->
 </head>
 <body>
 <div id="doc"></div>
+<div id="nav">
+  <div class="nav-item-title">基础教程</div>
+  <div class="J_nav_item nav-item"><a href="#l1">Hello World</a></div>
+  <div class="J_nav_item nav-item"><a href="#l2">什么是 Rax</a></div>
+  <div class="J_nav_item nav-item"><a href="#l3">简单 native 知识</a></div>
+  <div class="J_nav_item nav-item"><a href="#l4">Rax 与 Weex</a></div>
+  <div class="J_nav_item nav-item"><a href="#l5">framework</a></div>
+  <div class="J_nav_item nav-item"><a href="#l6">样式</a></div>
+  <div class="J_nav_item nav-item"><a href="#l7">长列表</a></div>
+  <div class="J_nav_item nav-item"><a href="#l8">binding</a></div>
+  <div class="nav-item-title">进阶教程</div>
+  <div class="J_nav_item nav-item"><a href="#l9">工具</a></div>
+  <div class="J_nav_item nav-item"><a href="#l10">调试</a></div>
+  <div class="J_nav_item nav-item"><a href="#l11">性能</a></div>
+  <div class="J_nav_item nav-item"><a href="#f">国际化</a></div>
+  <div class="J_nav_item nav-item"><a href="#f">单页应用</a></div>
+  <div class="J_nav_item nav-item"><a href="#f">jsservice</a></div>
+</div>
 <script>
   var converter = new Markdown.Converter();
   var htm = converter.makeHtml(window.raxdoc);
   document.getElementById('doc').innerHTML = htm;
 </script>
+<style>
+  body {
+    background: #fefefe;
+    padding: 100px 200px 100px 50px;
+  }
+  #nav {
+    position: fixed;
+    top: 100px;
+    right: 50px;
+    font-size: 14px;
+  }
+  .nav-item {
+    cursor: pointer;
+  }
+</style>
 </body>
 </html>
